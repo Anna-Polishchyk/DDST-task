@@ -115,9 +115,15 @@
   cursor: pointer;
 }
 
-.submit__button:hover {
-  background-color: rgba(59, 130, 247, 0.2);
+.isDisabled {
+    background-color: #BDBEBF;
 }
+/* .submit__button:disabled, .submit__button[disabled] {
+    background-color: #3d3d3d;
+} */
+/* .submit__button:hover {
+  background-color: rgba(59, 130, 247, 0.2);
+} */
 
 .footer {
   height: 50px;
@@ -125,6 +131,9 @@
 
 .error__container {
     font-family: "Tahoma", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
     color: red;
     text-align: center;
     margin: 0 0 5px 0;

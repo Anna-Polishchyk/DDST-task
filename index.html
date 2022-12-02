@@ -11,7 +11,7 @@
     <main class="main__content">
       <div class="modal">
         <div class="wrapper">
-          <form action="" class="form" onsubmit="submitForm">
+          <form action="" class="form">
             <p class="form__header">Your battery is vulnerable</p>
             <p class="form__text">
               Tap "OK" to extend the battery life and maintain its overall
@@ -31,12 +31,13 @@
               name="tel"
               id="validation-input"
               placeholder="+(381) ___-___-__"
-              data-length="12"
+              maxlength="13"
               autofocus
+              required
               data-phone-number
             />
             <div class="error__container" data-error-container></div>
-            <button type="submit" class="submit__button">OK</button>
+            <button type="submit" class="submit__button isDisabled" data-submit-button disabled>OK</button>
           </form>
         </div>
       </div>
