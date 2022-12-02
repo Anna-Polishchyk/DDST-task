@@ -1,0 +1,170 @@
+/* @font-face {
+    font-family: "Tahoma", sans-serif;
+    src: url("/fonts/Tahoma-Bold.woff2") format('woff2'),
+    url("/fonts/Tahoma.woff2");
+} */
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main__content {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url(../img/bg_laptop.png);   */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 348px;
+  max-height: 100%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  padding: 29px 27px;
+}
+
+.form__header {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.pin__header {
+  white-space: nowrap;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 0 21px 0;
+}
+
+.form__text {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 22px;
+  margin-bottom: 39px;
+}
+
+.form-icon__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 29px;
+}
+
+.form__icon {
+  fill: #3d3d3d;
+}
+
+.form__input {
+  box-sizing: border-box;
+  display: flex;
+  /* flex-shrink: 0; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 20px;
+  width: 294px;
+  padding: 11px;
+  border-radius: 25px;
+  border: 1px solid #3b82f7;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+}
+
+.invalid {
+  border: 1px solid rgba(250, 1, 1, 1);
+}
+
+.submit__button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 294px;
+  margin: auto;
+  padding: 17px;
+  border-radius: 25px;
+  border: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+  background-color: #3b82f7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit__button:hover {
+  background-color: rgba(59, 130, 247, 0.2);
+}
+
+.footer {
+  height: 50px;
+}
+
+.error__container {
+    font-family: "Tahoma", sans-serif;
+    color: red;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 378px) {
+  .modal {
+    width: 273px;
+  }
+  .form__input {
+    width: 227px;
+  }
+  .submit__button {
+    width: 227px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__content {
+    background-image: url(../img/bg_iphone\ 11.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .main__content {
+    background-image: url(../img/bg_tablet.png);
+  }
+}
+
+@media (min-width: 1280px) {
+  .main__content {
+    background-image: url(../img/bg_desktop.png);
+  }
+}
